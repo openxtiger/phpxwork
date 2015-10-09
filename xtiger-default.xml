@@ -1,0 +1,16 @@
+<!DOCTYPE xtiger
+        PUBLIC
+        "-//OpenXtiger Group//XTiger 1.0.0//EN"
+        "http://www.openxtiger.org/xtiger/xtiger-1.0.0.dtd">
+<xtiger>
+    <package name="xtiger_default">
+        <result-types>
+            <result-type name="xmarker" package="xtiger" method="result" file="MS_XTIGER/views/XMarker.php"
+                         default="true"/>
+        </result-types>
+        <interceptors file="MS_XTIGER/interceptor/Interceptors.php">
+            <interceptor name="authenticate" package="xtiger" method="intercept"/>
+            <interceptor name="language" package="xtiger" method="intercept"/>
+        </interceptors>
+    </package>
+</xtiger>
